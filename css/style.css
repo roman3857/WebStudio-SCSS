@@ -1123,12 +1123,6 @@ span {
   padding-bottom: 16px;
   padding-right: 32px;
   padding-top: 16px;
-}
-
-.customers-icon {
-  width: 106px;
-  height: 60px;
-  fill: #afb1b8;
   -webkit-transform: rotate(0);
           transform: rotate(0);
   -webkit-transition-property: color, background-color, -webkit-transform;
@@ -1141,6 +1135,12 @@ span {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-delay: 0;
           transition-delay: 0;
+}
+
+.customers-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
   display: inline-block;
 }
 
@@ -1172,8 +1172,6 @@ span {
 
 .customers-icon:hover {
   fill: #2196f3;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .footer {
@@ -1412,6 +1410,23 @@ span {
           justify-content: center;
   margin-left: 12px;
   margin-top: 113px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: color, background-color, -webkit-transform;
+  transition-property: color, background-color, -webkit-transform;
+  transition-property: color, background-color, transform;
+  transition-property: color, background-color, transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.footer-button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .footer-icon2 {

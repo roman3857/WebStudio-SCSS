@@ -1,65 +1,64 @@
 .customers {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: var(--bg-color3);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--bg-color3);
 }
 
 .customers-title {
-    color: #212121;
-    text-align: center;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
+  color: #212121;
+  text-align: center;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
 }
 
 .customers-item {
-    border-radius: 4px;
-    border: 1px solid #afb1b8;
-    width: 170px;
-    height: 92px;
-    padding-left: 32px;
-    padding-bottom: 16px;
-    padding-right: 32px;
-    padding-top: 16px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+  padding-left: 32px;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  padding-top: 16px;
+  transform: rotate(0);
+  transition-property: color, background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .customers-icon {
-    width: 106px;
-    height: 60px;
-    fill: #afb1b8;
-    transform: rotate(0);
-    transition-property: color, background-color, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
-    display: inline-block;
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  display: inline-block;
 }
 
 .customers-list {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .customers-item:hover {
-    border-radius: 4px;
-    border: 1px solid #2196f3;
-    width: 170px;
-    height: 92px;
-    padding-left: 32px;
-    padding-bottom: 16px;
-    padding-right: 32px;
-    padding-top: 16px;
-    transform: rotate(180deg);
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+  width: 170px;
+  height: 92px;
+  padding-left: 32px;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  padding-top: 16px;
+  transform: rotate(180deg);
 }
 
 .customers-icon:hover {
-    fill: #2196f3;
-    transform: rotate(180deg);
+  fill: #2196f3;
 }

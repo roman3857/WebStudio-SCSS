@@ -850,6 +850,23 @@ button:hover {
           justify-content: center;
   margin-left: 12px;
   margin-top: 113px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: color, background-color, -webkit-transform;
+  transition-property: color, background-color, -webkit-transform;
+  transition-property: color, background-color, transform;
+  transition-property: color, background-color, transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+.footer-button:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .footer-icon2 {
