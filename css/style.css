@@ -321,6 +321,12 @@ textarea {
   padding-bottom: 32px;
 }
 
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header-title {
   color: #2196f3;
   font-family: Raleway;
