@@ -1,15 +1,17 @@
-.footer {
-  background: var(--bg-color);
-  padding-bottom: 60px;
-}
 
-.footer-container {
+
+.footer {
+  background: $bg-color;
+  padding-bottom: 60px;
+
+
+&_container {
   display: flex;
   flex-direction: column;
 }
 
-.footer-title {
-  color: var(--title-color);
+&_title {
+  color: $title-color;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -19,8 +21,8 @@
   padding-top: 60px;
 }
 
-.footer-span {
-  color: var(--subtitle-color);
+&_span {
+  color: $title-color;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -29,8 +31,8 @@
   letter-spacing: 0.78px;
 }
 
-.foooter-address {
-  color: var(--title-color);
+&_address {
+  color: $title-color;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -43,7 +45,7 @@
   margin-top: 20px;
 }
 
-.footer-mail {
+&_mail {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
@@ -58,7 +60,7 @@
   margin-top: 9px;
 }
 
-.footer-tel {
+&_tel {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
@@ -71,7 +73,7 @@
   flex-shrink: 0;
 }
 
-.footer-text {
+&_text {
   color: $bg-color3;
 
   font-family: Roboto;
@@ -85,15 +87,15 @@
   padding-top: 72px;
 }
 
-.footer-lists {
+&_lists {
   display: flex;
   gap: 70px;
 }
 
-.footer-icon {
+&_icon {
   width: 20px;
   height: 20px;
-  fill: var(--title-color);
+  fill: $title-color;
   transform: rotate(0);
   transition-property: color, background-color, transform;
   transition-duration: 250ms;
@@ -102,51 +104,16 @@
   display: inline-block;
 }
 
-.footer-icon:hover {
+&_icon:hover {
   transform: rotate(180deg);
 }
 
-.footer-list3 {
+&_list3 {
   display: flex;
   gap: 10px;
 }
 
-.footer-item3 {
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-item3:hover {
-  width: 44px;
-  height: 44px;
-  background-color: #2196f3;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-group {
-  width: 358px;
-  height: 50px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  border-radius: 6px;
-  padding: 5px 10px;
-  margin-top: 5px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(33, 150, 243, 0);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-}
-
-.email2 {
+&_email2 {
   display: flex;
   width: 55px;
   flex-direction: column;
@@ -161,12 +128,48 @@
   letter-spacing: 0.48px;
 }
 
-.footer-button {
+&_item3 {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+&_item3:hover {
+  width: 44px;
+  height: 44px;
+  background-color: $subtitle-color;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+&_group {
+  width: 358px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+&_button {
   width: 200px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: #2196f3;
+  background: $subtitle-color;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: $bg-color3;
   text-align: center;
@@ -188,11 +191,11 @@
   transition-delay: 0;
 }
 
-.footer-button:hover {
+&_button:hover {
   transform: scale(1.15);
 }
 
-.footer-icon2 {
+&_icon2 {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -200,11 +203,12 @@
   margin-left: 10px;
 }
 
-.footer-email {
+&_email {
   display: flex;
   margin-left: 23px;
 }
 
-.footer-column {
+&_column {
   display: flex;
+}
 }

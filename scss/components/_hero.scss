@@ -1,10 +1,10 @@
 .hero {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.hero-title {
-    color: #212121;
+
+&_title {
+    color: $text-color;
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -15,33 +15,33 @@
     text-align: center;
 }
 
-.hero-photo {
+&_photo {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
-.hero-gallery {
+&_gallery {
     display: flex;
     gap: 30px;
 }
 
-.hero-item {
+&_item {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
     position: relative;
 }
 
-.hero-bg-item {
+&_bg_item {
     background: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;
     flex-shrink: 0;
 }
 
-.hero-item>.hero-bg3 {
+&_item>&_bg3 {
     position: absolute;
     top: 224px;
     right: 0;
@@ -50,7 +50,7 @@
     border-bottom-left-radius: 4px;
 }
 
-.hero-item>.hero-bg2 {
+&_item>&_bg2 {
     position: absolute;
     top: 224px;
     right: 0;
@@ -60,7 +60,7 @@
     border-bottom-left-radius: 4px;
 }
 
-.hero-item>.hero-bg {
+&_item>&_bg {
     position: absolute;
     top: 224px;
     right: 0;
@@ -70,7 +70,7 @@
     border-bottom-left-radius: 4px;
 }
 
-.hero-bg {
+&_bg {
     background: rgba(47, 48, 58, 0.8);
     color: $bg-color3;
     text-align: center;
@@ -83,7 +83,7 @@
     text-transform: uppercase;
 }
 
-.hero-bg2 {
+&_bg2 {
     background: rgba(47, 48, 58, 0.8);
     color: $bg-color3;
     text-align: center;
@@ -96,7 +96,7 @@
     text-transform: uppercase;
 }
 
-.hero-bg3 {
+&_bg3 {
     background: rgba(47, 48, 58, 0.8);
     color: $bg-color3;
     text-align: center;
@@ -109,9 +109,10 @@
     text-transform: uppercase;
 }
 
-.hero-photo-bg {
+&_photo_bg {
     width: 370px;
     height: 70px;
     flex-shrink: 0;
     background: rgba(47, 48, 58, 0.8);
+}
 }

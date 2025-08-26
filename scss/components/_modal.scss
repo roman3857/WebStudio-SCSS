@@ -1,17 +1,20 @@
-.close-icon {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    display: block;
-}
+.modal {
+  border-radius: 4px;
+  background: $bg-color3;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  width: 528px;
+  height: 581px;
+  flex-shrink: 0;
+  position: relative;
+  margin-left: 41px;
+  margin-right: 39px;
 
-.close-icon-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  .is-hidden {
+    display: none;
+  }
 
-.close {
+  .close {
     width: 30px;
     height: 30px;
     flex-shrink: 0;
@@ -21,128 +24,127 @@
     top: 8px;
     left: 490px;
     cursor: pointer;
-}
 
-.close:hover .close:focus {
-    fill: #2196f3;
-}
+    &_icon {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      display: block;
+    }
 
-.modal {
-    border-radius: 4px;
-    background: $bg-color3;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-        0 2px 1px 0 rgba(0, 0, 0, 0.2);
-    width: 528px;
-    height: 581px;
-    flex-shrink: 0;
-    position: relative;
-    margin-left: 41px;
-    margin-right: 39px;
-}
+    &_icon-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.name {
-    color: #757575;
+    &_:hover &_:focus {
+      fill: $subtitle-color;
+    }
+  }
+  &_name {
+    color: $subtext-color;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
-}
+  }
 
-.form-container {
+  &_form_container {
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
     background: $bg-color3;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+  }
 
-label {
+  &_label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-}
+  }
 
-.icon:hover {
-    fill: #2196f3;
+  &_icon:hover {
+    fill: $subtitle-color;
     width: 18px;
     height: 18px;
-}
+  }
 
-.input-group {
+  &_input_group {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid $bg-color4;
     border-radius: 6px;
     padding: 5px 10px;
     margin-top: 5px;
-}
+  }
 
-.input-group:hover {
-    border: 1px solid #2196f3;
-}
+  &_input_group:hover {
+    border: 1px solid $subtitle-color;
+  }
 
-.form {
+  &_form {
     margin-left: 41px;
     margin-right: 39px;
-}
+  }
 
-.icon {
+  &_icon {
     width: 18px;
     height: 18px;
     margin-right: 10px;
-    fill: #666;
+    fill: $text3-color;
     flex-shrink: 0;
-}
+  }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-textarea {
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
     border: none;
     width: 100%;
     outline: none;
     font-size: 14px;
     padding: 8px 0;
     background: transparent;
-}
+  }
 
-textarea {
+  &_textarea {
     height: 80px;
     resize: none;
-    border: 1px solid #cccccc;
+    border: 1px solid $bg-color4;
     border-radius: 6px;
     margin-top: 5px;
     padding: 10px;
     font-family: Arial, sans-serif;
-}
+  }
 
-.checkbox-group {
+  &_checkbox_group {
     display: flex;
     align-items: center;
     margin-top: 15px;
     font-size: 13px;
     display: flex;
     gap: 7px;
-}
+  }
 
-.checkbox-group a {
-    color: #007bff;
+  &_checkbox_group a {
+    color: $subtitle-color;
     text-decoration: none;
-}
+  }
 
-.checkbox-group a:hover {
+  &_checkbox_group a:hover {
     text-decoration: underline;
-}
+  }
 
-.button-submit {
+  &_button_submit {
     width: 200px;
     height: 50px;
     flex-shrink: 0;
     border-radius: 4px;
-    background: #188ce8;
+    background: $subtitle-color;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     color: $bg-color3;
     text-align: center;
@@ -155,10 +157,10 @@ textarea {
     margin-top: 30px;
     margin-left: 124px;
     margin-right: 130px;
-}
+  }
 
-.modal-title {
-    color: #212121;
+  &_modal_title {
+    color: $text-color;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
@@ -169,9 +171,9 @@ textarea {
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-}
+  }
 
-.header-modal {
+  &_header_modal {
     background: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
@@ -182,13 +184,9 @@ textarea {
     justify-content: center;
     align-items: center;
     z-index: 1;
-}
+  }
 
-.is-hidden {
-    display: none;
-}
-
-.modal-label {
+  &_modal_label {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     display: flex;
@@ -196,4 +194,5 @@ textarea {
     width: 448px;
     height: 40px;
     flex-shrink: 0;
+  }
 }

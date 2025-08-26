@@ -1,17 +1,18 @@
-.info-list {
+.info {
+  &_list {
     display: flex;
     margin-top: 94px;
     width: 1170px;
     height: 248px;
-}
+  }
 
-.info-item {
+  &_item {
     margin-right: 30px;
     display: block;
     gap: 30px;
-}
+  }
 
-.info-item1::before {
+  &_item1::before {
     content: "";
     display: block;
     width: 270px;
@@ -20,10 +21,10 @@
     background-position: center;
     background-size: 70px 70px;
     background-repeat: no-repeat;
-    background-color: #f5f4fa;
-}
+    background-color: $bg-color2;
+  }
 
-.info-item2::before {
+  &_item2::before {
     content: "";
     display: block;
     width: 270px;
@@ -32,10 +33,10 @@
     background-position: center;
     background-size: 70px 70px;
     background-repeat: no-repeat;
-    background-color: #f5f4fa;
-}
+    background-color: $bg-color2;
+  }
 
-.info-item3::before {
+  &_item3::before {
     content: "";
     display: block;
     width: 270px;
@@ -44,10 +45,10 @@
     background-position: center;
     background-size: 70px 70px;
     background-repeat: no-repeat;
-    background-color: #f5f4fa;
-}
+    background-color: $bg-color2;
+  }
 
-.info-item4::before {
+  &_item4::before {
     content: "";
     display: block;
     width: 270px;
@@ -56,11 +57,11 @@
     background-position: center;
     background-size: 70px 70px;
     background-repeat: no-repeat;
-    background-color: #f5f4fa;
-}
+    background-color: $bg-color2;
+  }
 
-.info-subtitle {
-    color: #212121;
+  &_subtitle {
+    color: $text-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -69,13 +70,14 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 20px;
-}
+  }
 
-.info-text {
-    color: #757575;
+  &_text {
+    color: $subtext-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+  }
 }
