@@ -1,115 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebStudio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/style.min.css" />
-</head>
-<body>
-  <header class="header">
-    <div class="container header_container">
-      <h2 class="header_title">Web<span>Studio</span></h2>
-      <nav class="header_nav">
-        <ul class="header_list">
-          <li class="header_item"><a href="./index.html" class="header_link">Студія</a></li>
-          <li class="header_item"><a href="./index2.html" class="header_link2">Портфоліо</a></li>
-          <li class="header_item"><a href="@" class="header_link3">Контакти</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header_container">
+        <h2 class="header_title">Web<span>Studio</span></h2>
+        <nav class="header_nav">
+          <ul class="header_list">
+            <li class="header_item">
+              <a href="./index.html" class="header_link">Студія</a>
+            </li>
+            <li class="header_item">
+              <a href="./index2.html" class="header_link2">Портфоліо</a>
+            </li>
+            <li class="header_item">
+              <a href="@" class="header_link3">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header_list2">
+          <li class="header_item2">
+            <a
+              class="header_mail header_contact"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header_mail_icon">
+                <use href="./image/symboldefts.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header_item2">
+            <a class="header_tel header_contact" href="tel:+380961111111">
+              <svg class="header_tel_icon">
+                <use href="./image/symboldefts.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header_list2">
-        <li class="header_item2">
-          <a class="header_mail header_contact" href="mailto:info@devstudio.com">
-            <svg class="header_mail_icon"><use href="./image/symboldefts.svg#icon-mail"></use></svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="header_item2">
-          <a class="header_tel header_contact" href="tel:+380961111111">
-            <svg class="header_tel_icon"><use href="./image/symboldefts.svg#icon-smartphone"></use></svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="modal_header is-hidden" data-modal>
-      <div class="modal">
-        <button class="close" type="button">
-          <div class="close_icon_item">
-            <svg class="close_icon"><use href="./image/symbol-defs(2).svg#icon-close" data-modal-close></use></svg>
-          </div>
-        </button>
-        <h1 class="modal_title">Залиште свої дані, ми вам передзвонимо</h1>
-        <form class="modal_form">
-          <label for="name">Ім'я</label>
-          <div class="modal_input_group">
-            <svg class="modal_icon"><use href="./image/symbol-defs (4).svg#icon-person"></use></svg>
-            <input type="text" id="name" required />
-          </div>
-
-          <label for="phone">Телефон</label>
-          <div class="modal_input_group">
-            <svg class="modal_icon"><use href="./image/symbol-defs (4).svg#icon-phone"></use></svg>
-            <input type="tel" id="phone" required />
-          </div>
-
-          <label for="email">Пошта</label>
-          <div class="modal_input_group">
-            <svg class="modal_icon"><use href="./image/symbol-defs (4).svg#icon-email2"></use></svg>
-            <input type="email" id="email" required />
-          </div>
-
-          <label for="comment">Коментар</label>
-          <textarea id="comment" placeholder="Введіть текст"></textarea>
-
-          <div class="modal_checkbox_group">
-            <input type="checkbox" id="agree" />
-            <label for="agree">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>
-          </div>
-
-          <button class="modal_button_submit" type="submit">Відправити</button>
-        </form>
       </div>
-    </div>
-  </header>
 
-  <section class="bisnes">
-    <div class="container">
-      <h1 class="bisnes_title">Ефективні рішення для вашого бізнесу</h1>
-      <button type="button" class="bisnes_button" data-modal-open>Замовити послугу</button>
-    </div>
-  </section>
+      <div class="modal_header is-hidden" data-modal>
+        <div class="modal">
+          <button class="close" type="button">
+            <div class="close_icon_item">
+              <svg class="close_icon">
+                <use
+                  href="./image/symbol-defs(2).svg#icon-close"
+                  data-modal-close
+                ></use>
+              </svg>
+            </div>
+          </button>
+          <h1 class="modal_title">Залиште свої дані, ми вам передзвонимо</h1>
+          <form class="modal_form">
+            <label for="name">Ім'я</label>
+            <div class="modal_input_group">
+              <svg class="modal_icon">
+                <use href="./image/symbol-defs (4).svg#icon-person"></use>
+              </svg>
+              <input type="text" id="name" required />
+            </div>
 
-  <section class="info">
-    <div class="container">
-      <ul class="info_list">
-        <li class="info_item info_item1">
-          <h3 class="info_subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-          <p class="info_text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції</p>
-        </li>
-        <li class="info_item info_item2">
-          <h3 class="info_subtitle">ПУНКТУАЛЬНІСТЬ</h3>
-          <p class="info_text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-        </li>
-        <li class="info_item info_item3">
-          <h3 class="info_subtitle">ПЛАНУВАННЯ</h3>
-          <p class="info_text">Так само консультація з широким активом значною мірою зумовлює.</p>
-        </li>
-        <li class="info_item info_item4">
-          <h3 class="info_subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-          <p class="info_text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+            <label for="phone">Телефон</label>
+            <div class="modal_input_group">
+              <svg class="modal_icon">
+                <use href="./image/symbol-defs (4).svg#icon-phone"></use>
+              </svg>
+              <input type="tel" id="phone" required />
+            </div>
+
+            <label for="email">Пошта</label>
+            <div class="modal_input_group">
+              <svg class="modal_icon">
+                <use href="./image/symbol-defs (4).svg#icon-email2"></use>
+              </svg>
+              <input type="email" id="email" required />
+            </div>
+
+            <label class="name" for="comment">Коментар</label>
+            <textarea id="comment" placeholder="Введіть текст"></textarea>
+
+            <div class="modal_checkbox_group">
+              <input type="checkbox" id="agree" />
+              <label for="agree"
+                >Погоджуюся з розсилкою та приймаю
+                <a href="#">Умови договору</a></label
+              >
+            </div>
+
+            <button class="modal_button_submit" type="submit">
+              Відправити
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <section class="bisnes">
+      <div class="container">
+        <h1 class="bisnes_title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="bisnes_button" data-modal-open>
+          Замовити послугу
+        </button>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <ul class="info_list">
+          <li class="info_item info_item1">
+            <h3 class="info_subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="info_text">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції
+            </p>
+          </li>
+          <li class="info_item info_item2">
+            <h3 class="info_subtitle">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="info_text">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li class="info_item info_item3">
+            <h3 class="info_subtitle">ПЛАНУВАННЯ</h3>
+            <p class="info_text">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="info_item info_item4">
+            <h3 class="info_subtitle">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="info_text">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- hero -->
     <section class="hero">

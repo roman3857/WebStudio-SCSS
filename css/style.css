@@ -110,7 +110,7 @@ body {
   display: block;
 }
 
-.modal .close_icon-item {
+.modal .close_icon_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +122,7 @@ body {
           justify-content: center;
 }
 
-.modal .close_:hover .modal .close_:focus {
+.modal .close_icon_item:hover .modal .close_icon_item:focus {
   fill: #2196f3;
 }
 

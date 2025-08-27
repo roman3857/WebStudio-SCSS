@@ -32,13 +32,13 @@
       display: block;
     }
 
-    &_icon-item {
+    &_icon_item {
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    &_:hover &_:focus {
+    &_icon_item:hover &_icon_item:focus {
       fill: $subtitle-color;
     }
   }
@@ -110,6 +110,7 @@
     padding: 8px 0;
     background: transparent;
   }
+
 
   &_textarea {
     height: 80px;
