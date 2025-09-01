@@ -4,12 +4,12 @@
   background-color: $bg-color2;
 
 
-&_list {
+&__list {
   display: flex;
   gap: 30px;
 }
 
-&_member {
+&__member {
   width: 270px;
   height: 428px;
   flex-shrink: 0;
@@ -19,7 +19,7 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
-&_title {
+&__title {
   color: $text-color;
   text-align: center;
   font-size: 36px;
@@ -31,7 +31,7 @@
   text-align: center;
 }
 
-&_card {
+&__card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +41,7 @@
   border-radius: 4px;
 }
 
-&_icon {
+&__icon {
   width: 20px;
   height: 20px;
   transform: rotate(0);
@@ -52,14 +52,14 @@
   display: inline-block;
 }
 
-&_list2 {
+&__list2 {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-&_link2 {
+&__link2 {
   width: 44px;
   height: 44px;
   display: flex;
@@ -71,21 +71,21 @@
   fill: $text3-color;
 }
 
-&_link2:hover,
-&_link2:focus {
+&__link2:hover,
+&__link2:focus {
   background-color: $subtitle-color;
   transform: rotate(180deg);
 }
 
-&_link2:hover,
-&_icon:hover,
-&_link2:focus,
-&_icon:focus {
+&__link2:hover,
+&__icon:hover,
+&__link2:focus,
+&__icon:focus {
   fill: $bg-color3;
   transform: rotate(180deg);
 }
 
-&_name {
+&__name {
   color: $text-color;
   text-align: center;
   font-family: Roboto;
@@ -100,13 +100,13 @@
   margin-right: auto;
 }
 
-&_-container {
+&__-container {
   display: block;
   justify-content: center;
   align-items: center;
 }
 
-&_role {
+&__role {
   color: $subtext-color;
   text-align: center;
   font-family: Roboto;

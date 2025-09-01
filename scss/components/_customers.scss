@@ -4,7 +4,7 @@
   background-color: $bg-color3;
 
 
-&_title {
+&__title {
   color: $text-color;
   text-align: center;
   text-align: center;
@@ -17,7 +17,7 @@
   margin-bottom: 50px;
 }
 
-&_item {
+&__item {
   border-radius: 4px;
   border: 1px solid $text3-color;
   width: 170px;
@@ -33,21 +33,21 @@
   transition-delay: 0;
 }
 
-&_icon {
+&__icon {
   width: 106px;
   height: 60px;
   fill: $text3-color;
   display: inline-block;
 }
 
-&_list {
+&__list {
   display: flex;
   gap: 30px;
   justify-content: center;
   align-items: center;
 }
 
-&_item:hover {
+&__item:hover {
   border-radius: 4px;
   border: 1px solid $subtitle-color;
   width: 170px;
@@ -59,7 +59,7 @@
   transform: rotate(180deg);
 }
 
-&_icon:hover {
+&__icon:hover {
   fill: $subtitle-color;
 }
 }

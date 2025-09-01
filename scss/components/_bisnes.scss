@@ -19,7 +19,7 @@
     ),
     url("../image/photo22.webp");
 
-  &_title {
+  &__title {
     color: $bg-color3;
     text-align: center;
     font-family: Roboto;
@@ -33,7 +33,7 @@
     margin-right: 237px;
   }
 
-  &_button {
+  &__button {
     width: 216px;
     height: 50px;
     flex-shrink: 0;
@@ -58,7 +58,7 @@
     display: inline-block;
   }
 
-  &_button:hover {
+  &__button:hover {
     transform: rotate(50deg);
   }
 }

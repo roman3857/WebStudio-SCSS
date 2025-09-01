@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 
 
-&_title {
+&__title {
     color: $text-color;
     text-align: center;
     font-size: 36px;
@@ -15,33 +15,33 @@
     text-align: center;
 }
 
-&_photo {
+&__photo {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 
-&_gallery {
+&__gallery {
     display: flex;
     gap: 30px;
 }
 
-&_item {
+&__item {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
     position: relative;
 }
 
-&_bg_item {
+&__bgitem {
     background: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;
     flex-shrink: 0;
 }
 
-&_item>&_bg3 {
+&__item>&__bg3 {
     position: absolute;
     top: 224px;
     right: 0;
@@ -50,7 +50,7 @@
     border-bottom-left-radius: 4px;
 }
 
-&_item>&_bg2 {
+&__item>&__bg2 {
     position: absolute;
     top: 224px;
     right: 0;
@@ -60,7 +60,7 @@
     border-bottom-left-radius: 4px;
 }
 
-&_item>&_bg {
+&__item>&__bg {
     position: absolute;
     top: 224px;
     right: 0;
@@ -70,7 +70,7 @@
     border-bottom-left-radius: 4px;
 }
 
-&_bg {
+&__bg {
     background: rgba(47, 48, 58, 0.8);
     color: $bg-color3;
     text-align: center;
@@ -83,7 +83,7 @@
     text-transform: uppercase;
 }
 
-&_bg2 {
+&__bg2 {
     background: rgba(47, 48, 58, 0.8);
     color: $bg-color3;
     text-align: center;
@@ -96,7 +96,7 @@
     text-transform: uppercase;
 }
 
-&_bg3 {
+&__bg3 {
     background: rgba(47, 48, 58, 0.8);
     color: $bg-color3;
     text-align: center;
@@ -109,7 +109,7 @@
     text-transform: uppercase;
 }
 
-&_photo_bg {
+&__photobg {
     width: 370px;
     height: 70px;
     flex-shrink: 0;

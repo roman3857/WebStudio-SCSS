@@ -1,18 +1,18 @@
 .info {
-  &_list {
+  &__list {
     display: flex;
     margin-top: 94px;
     width: 1170px;
     height: 248px;
   }
 
-  &_item {
+  &__item {
     margin-right: 30px;
     display: block;
     gap: 30px;
   }
 
-  &_item1::before {
+  &__item1::before {
     content: "";
     display: block;
     width: 270px;
@@ -24,7 +24,7 @@
     background-color: $bg-color2;
   }
 
-  &_item2::before {
+  &__item2::before {
     content: "";
     display: block;
     width: 270px;
@@ -36,7 +36,7 @@
     background-color: $bg-color2;
   }
 
-  &_item3::before {
+  &__item3::before {
     content: "";
     display: block;
     width: 270px;
@@ -48,7 +48,7 @@
     background-color: $bg-color2;
   }
 
-  &_item4::before {
+  &__item4::before {
     content: "";
     display: block;
     width: 270px;
@@ -60,7 +60,7 @@
     background-color: $bg-color2;
   }
 
-  &_subtitle {
+  &__subtitle {
     color: $text-color;
     font-size: 14px;
     font-style: normal;
@@ -72,7 +72,7 @@
     margin-top: 20px;
   }
 
-  &_text {
+  &__text {
     color: $subtext-color;
     font-size: 14px;
     font-style: normal;

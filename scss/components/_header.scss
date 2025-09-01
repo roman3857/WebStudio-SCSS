@@ -2,10 +2,11 @@
   padding-top: 32px;
   border-bottom: solid 1px $bg-color2;
   padding-bottom: 32px;
-  &_container {
+
+  &__container {
     display: flex;
   }
-  &_title {
+  &__title {
     color: $subtitle-color;
     font-family: Raleway;
     font-size: 26px;
@@ -24,18 +25,30 @@
     line-height: normal;
     letter-spacing: 0.78px;
   }
-  &_list {
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: $subtitle-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+    }
+  }
+
+  &__list {
     display: flex;
     gap: 50px;
-  }
-  &_nav {
     display: flex;
-    align-items: center;
+    margin-left: 95px;
+    margin-right: 313px;
+    margin-bottom: px;
   }
-  &_link:hover::after {
-    display: block;
-  }
-  &_link {
+
+  &__link {
     display: inline-block;
     color: $text-color;
     font-size: 14px;
@@ -49,33 +62,35 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
+
+    &:hover {
+      color: $subtitle-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      transform: scale(1.15);
+    }
+    &::after {
+      content: "";
+      width: 48px;
+      height: 4px;
+      flex-shrink: 0;
+      border-radius: 2px;
+      display: none;
+      bottom: -44px;
+      left: 0;
+      background: $subtitle-color;
+      position: absolute;
+    }
+    &:hover::after {
+      display: block;
+      animation: spin 2s infinite;
+    }
   }
-  &_link:hover {
-    color: $subtitle-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    transform: scale(1.15);
-  }
-  &_link::after {
-    content: "";
-    width: 48px;
-    height: 4px;
-    flex-shrink: 0;
-    border-radius: 2px;
-    display: none;
-    bottom: -44px;
-    left: 0;
-    background: $subtitle-color;
-    position: absolute;
-  }
-  &_link:hover::after {
-    display: block;
-    animation: spin 2s infinite;
-  }
-  &_link2 {
+
+  &__link2 {
     color: $text-color;
     font-size: 14px;
     font-style: normal;
@@ -89,33 +104,35 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
     display: inline-block;
+
+    &:hover {
+      color: $subtitle-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      transform: scale(1.15);
+    }
+    &::after {
+      content: "";
+      width: 72px;
+      height: 4px;
+      flex-shrink: 0;
+      border-radius: 2px;
+      display: none;
+      bottom: -44px;
+      left: 0;
+      background: $subtitle-color;
+      position: absolute;
+    }
+    &:hover::after {
+      display: block;
+      animation: spin 2s infinite;
+    }
   }
-  &_link2:hover {
-    color: $subtitle-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    transform: scale(1.15);
-  }
-  &_link2::after {
-    content: "";
-    width: 72px;
-    height: 4px;
-    flex-shrink: 0;
-    border-radius: 2px;
-    display: none;
-    bottom: -44px;
-    left: 0;
-    background: $subtitle-color;
-    position: absolute;
-  }
-  &_link2:hover::after {
-    display: block;
-    animation: spin 2s infinite;
-  }
-  &_link3 {
+
+  &__link3 {
     color: $text-color;
     font-size: 14px;
     font-style: normal;
@@ -129,50 +146,42 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
     display: inline-block;
+
+    &:hover {
+      color: $subtitle-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      transform: scale(1.15);
+    }
+    &::after {
+      content: "";
+      width: 64px;
+      height: 4px;
+      flex-shrink: 0;
+      border-radius: 2px;
+      display: none;
+      bottom: -44px;
+      left: 0;
+      background: $subtitle-color;
+      position: absolute;
+    }
+    &:hover::after {
+      display: inline-block;
+      animation: spin 2s infinite;
+    }
   }
-  &_link3:hover {
-    color: $subtitle-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-    transform: scale(1.15);
-  }
-  &_link3::after {
-    content: "";
-    width: 64px;
-    height: 4px;
-    flex-shrink: 0;
-    border-radius: 2px;
-    display: none;
-    bottom: -44px;
-    left: 0;
-    background: $subtitle-color;
-    position: absolute;
-  }
-  &_link3:hover::after {
-    display: inline-block;
-    animation: spin 2s infinite;
-  }
-  &_contact_list {
-    display: flex;
-    margin-left: 344px;
-    align-items: center;
-  }
-  &_list2 {
+
+  &__list2 {
     list-style-type: none;
     display: flex;
     align-items: center;
     margin-left: auto;
   }
-  &_mail_icon {
-    margin-right: 10px;
-    fill: currentColor;
-    width: 16px;
-    height: 12px;
-  }
-  &_contact {
+
+  &__mail {
     color: $subtext-color;
     font-family: "Roboto";
     font-size: 14px;
@@ -180,7 +189,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
-    margin-right: 50px;
+    margin-right: 30px;
     display: flex;
     align-items: center;
     transform: scale(1);
@@ -188,19 +197,22 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
+
+    &:hover,
+    &:focus {
+      color: $subtitle-color;
+      transform: scale(1.15);
+    }
   }
-  &_mail:hover,
-  &_mail:focus {
-    color: $subtitle-color;
-    transform: scale(1.15);
-  }
-  &_tel_icon {
+
+  &__mail-icon {
     margin-right: 10px;
     fill: currentColor;
-    width: 10px;
-    height: 16px;
+    width: 16px;
+    height: 12px;
   }
-  &_tel {
+
+  &__tel {
     color: $subtext-color;
     font-family: Roboto;
     font-size: 14px;
@@ -214,23 +226,21 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
     display: flex;
-  }
-  &_tel:hover {
-    color: $subtitle-color;
-    transform: scale(1.15);
-  }
-  &_list {
-    display: flex;
-    margin-left: 297px;
-    margin-right: 297px;
-    margin-bottom: 50px;
-  }
-  &_nav:hover {
-    color: $subtitle-color;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
+    align-items: center;
+    margin-right: 10px;
+    fill: currentColor;
+    width: 142px;
+    height: 16px;
+
+    &:hover {
+      color: $subtitle-color;
+      transform: scale(1.15);
+    }
+    &-icon {
+      margin-right: 10px;
+      fill: currentColor;
+      width: 10px;
+      height: 16px;
+    }
   }
 }

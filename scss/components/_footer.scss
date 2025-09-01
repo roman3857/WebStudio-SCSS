@@ -5,12 +5,12 @@
   padding-bottom: 60px;
 
 
-&_container {
+&__container {
   display: flex;
   flex-direction: column;
 }
 
-&_title {
+&__title {
   color: $title-color;
   font-family: Raleway;
   font-size: 26px;
@@ -21,7 +21,7 @@
   padding-top: 60px;
 }
 
-&_span {
+&__span {
   color: $title-color;
   font-family: Raleway;
   font-size: 26px;
@@ -31,7 +31,7 @@
   letter-spacing: 0.78px;
 }
 
-&_address {
+&__address {
   color: $title-color;
   font-family: Roboto;
   font-size: 14px;
@@ -45,7 +45,7 @@
   margin-top: 20px;
 }
 
-&_mail {
+&__mail {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
@@ -60,7 +60,7 @@
   margin-top: 9px;
 }
 
-&_tel {
+&__tel {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
@@ -73,7 +73,7 @@
   flex-shrink: 0;
 }
 
-&_text {
+&__text {
   color: $bg-color3;
 
   font-family: Roboto;
@@ -87,12 +87,12 @@
   padding-top: 72px;
 }
 
-&_lists {
+&__lists {
   display: flex;
   gap: 70px;
 }
 
-&_icon {
+&__icon {
   width: 20px;
   height: 20px;
   fill: $title-color;
@@ -104,16 +104,16 @@
   display: inline-block;
 }
 
-&_icon:hover {
+&__icon:hover {
   transform: rotate(180deg);
 }
 
-&_list3 {
+&__list3 {
   display: flex;
   gap: 10px;
 }
 
-&_email2 {
+&__email2 {
   display: flex;
   width: 55px;
   flex-direction: column;
@@ -128,7 +128,7 @@
   letter-spacing: 0.48px;
 }
 
-&_item3 {
+&__item3 {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -138,7 +138,7 @@
   justify-content: center;
 }
 
-&_item3:hover {
+&__item3:hover {
   width: 44px;
   height: 44px;
   background-color: $subtitle-color;
@@ -148,7 +148,7 @@
   justify-content: center;
 }
 
-&_group {
+&__group {
   width: 358px;
   height: 50px;
   flex-shrink: 0;
@@ -164,7 +164,7 @@
 }
 
 
-&_button {
+&__button {
   width: 200px;
   height: 50px;
   flex-shrink: 0;
@@ -191,11 +191,11 @@
   transition-delay: 0;
 }
 
-&_button:hover {
+&__button:hover {
   transform: scale(1.15);
 }
 
-&_icon2 {
+&__icon2 {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -203,12 +203,12 @@
   margin-left: 10px;
 }
 
-&_email {
+&__email {
   display: flex;
   margin-left: 23px;
 }
 
-&_column {
+&__column {
   display: flex;
 }
 }
