@@ -1,0 +1,33 @@
+%title {
+  color: $text-color;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
+%icon {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-position: center;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-color: $bg-color2;
+}
+
+%bg {
+  background: rgba(47, 48, 58, 0.8);
+  color: $bg-color3;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}

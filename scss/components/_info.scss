@@ -13,51 +13,24 @@
   }
 
   &__item1::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
+    @extend %icon;
     background-image: url(../photo/antenna1.1.webp);
-    background-position: center;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-color: $bg-color2;
+
   }
 
   &__item2::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
+    @extend %icon;
     background-image: url(../photo/clock1.webp);
-    background-position: center;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-color: $bg-color2;
   }
 
   &__item3::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
+    @extend %icon;
     background-image: url(../photo/diagram1.webp);
-    background-position: center;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-color: $bg-color2;
   }
 
   &__item4::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
+    @extend %icon;
     background-image: url(../photo/astronaut1.webp);
-    background-position: center;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-color: $bg-color2;
   }
 
   &__subtitle {

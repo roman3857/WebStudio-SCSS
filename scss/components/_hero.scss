@@ -1,56 +1,49 @@
 .hero {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
-
-&__title {
-    color: $text-color;
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
+  &__title {
+    @extend %title;
     margin-bottom: 50px;
     text-align: center;
-}
+  }
 
-&__photo {
+  &__photo {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
     background: url(<path-to-image>) lightgray 50% / cover no-repeat;
-}
+  }
 
-&__gallery {
+  &__gallery {
     display: flex;
     gap: 30px;
-}
+  }
 
-&__item {
+  &__item {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
     position: relative;
-}
+  }
 
-&__bgitem {
+  &__bgitem {
     background: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;
     flex-shrink: 0;
-}
+  }
 
-&__item>&__bg3 {
+  &__item > &__bg3 {
     position: absolute;
     top: 224px;
     right: 0;
     margin: 0;
     padding: 18px 95px;
     border-bottom-left-radius: 4px;
-}
+  }
 
-&__item>&__bg2 {
+  &__item > &__bg2 {
     position: absolute;
     top: 224px;
     right: 0;
@@ -58,9 +51,9 @@
     padding: 27px 0;
     width: 100%;
     border-bottom-left-radius: 4px;
-}
+  }
 
-&__item>&__bg {
+  &__item > &__bg {
     position: absolute;
     top: 224px;
     right: 0;
@@ -68,51 +61,24 @@
     padding: 27px 0;
     width: 100%;
     border-bottom-left-radius: 4px;
-}
+  }
 
-&__bg {
-    background: rgba(47, 48, 58, 0.8);
-    color: $bg-color3;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
+  &__bg {
+    @extend %bg;
+  }
 
-&__bg2 {
-    background: rgba(47, 48, 58, 0.8);
-    color: $bg-color3;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
+  &__bg2 {
+    @extend %bg;
+  }
 
-&__bg3 {
-    background: rgba(47, 48, 58, 0.8);
-    color: $bg-color3;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-}
+  &__bg3 {
+    @extend %bg;
+  }
 
-&__photobg {
+  &__photobg {
     width: 370px;
     height: 70px;
     flex-shrink: 0;
     background: rgba(47, 48, 58, 0.8);
-}
+  }
 }

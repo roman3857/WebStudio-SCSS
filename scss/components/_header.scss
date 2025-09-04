@@ -7,12 +7,7 @@
     display: flex;
   }
   &__title {
-    color: $subtitle-color;
-    font-family: Raleway;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    @extend %title;
     letter-spacing: 0.78px;
   }
   span {
