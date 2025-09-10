@@ -6,8 +6,7 @@
 
 &__title {
  @extend %title;
-  text-align: center;
-  text-align: center;
+    @include flex-position($display: flex);
   margin-bottom: 50px;
 }
 
@@ -35,10 +34,7 @@
 }
 
 &__list {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
+    @include flex-position($display: flex, $space: 50px);
 }
 
 &__item:hover {

@@ -3,8 +3,7 @@
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
-    flex-direction: column;
+    @include flex-position($display: flex);
   }
 
   &__title {
@@ -106,10 +105,8 @@
   }
 
   &__email2 {
-    display: flex;
     width: 55px;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-position($display: flex, $direction: column);
     flex-shrink: 0;
     color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
@@ -125,9 +122,7 @@
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-position($display: flex);
   }
 
   &__item3:hover {
@@ -135,17 +130,14 @@
     height: 44px;
     background-color: $subtitle-color;
     border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-position($display: flex);
   }
 
   &__group {
     width: 358px;
     height: 50px;
     flex-shrink: 0;
-    display: flex;
-    align-items: center;
+    @include flex-position($display: flex);
     border-radius: 6px;
     padding: 5px 10px;
     margin-top: 5px;
@@ -170,9 +162,7 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.96px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-position($display: flex);
     margin-left: 12px;
     margin-top: 113px;
     transform: scale(1);

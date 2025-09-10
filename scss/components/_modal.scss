@@ -37,8 +37,7 @@
     margin-right: 39px;
   }
   &__input-group {
-    display: flex;
-    align-items: center;
+    @include flex-position($display: flex);
     border: 1px solid $bg-color4;
     border-radius: 6px;
     padding: 5px 10px;
@@ -116,11 +115,9 @@
   }
 
   &__checkbox-group {
-    display: flex;
-    align-items: center;
+    @include flex-position($display: flex);
     margin-top: 15px;
     font-size: 13px;
-    display: flex;
     gap: 7px;
   }
 
@@ -156,8 +153,7 @@
   &__label {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    display: flex;
-    flex-direction: column;
+    @include flex-position($display: flex, $direction: column);
     width: 448px;
     height: 40px;
     flex-shrink: 0;
@@ -187,9 +183,7 @@
   }
 
   &__icon-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-position($display: flex);
   }
 
   &__icon-item:hover &__icon-item:focus {

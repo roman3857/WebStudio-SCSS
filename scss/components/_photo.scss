@@ -115,9 +115,7 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @include flex-position($display: flex, $wrap: wrap, $space: 30px)
   }
 
   &__item {

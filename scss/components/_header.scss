@@ -20,8 +20,7 @@
     letter-spacing: 0.78px;
   }
   &__nav {
-    display: flex;
-    align-items: center;
+    @include flex-position($display: flex);
 
     &:hover {
       color: $subtitle-color;
@@ -34,9 +33,7 @@
   }
 
   &__list {
-    display: flex;
-    gap: 50px;
-    display: flex;
+    @include flex-position($display: flex, $Space: 50px);
     margin-left: 95px;
     margin-right: 313px;
     margin-bottom: px;
@@ -85,7 +82,7 @@
   }
 
   &__link2 {
-    color: $text-color;
+    color: $text1-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -127,7 +124,7 @@
   }
 
   &__link3 {
-    color: $text-color;
+    color: $text1-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -170,8 +167,7 @@
 
   &__list2 {
     list-style-type: none;
-    display: flex;
-    align-items: center;
+    @include flex-position($display: flex);
     margin-left: auto;
   }
 
@@ -184,8 +180,7 @@
     line-height: normal;
     letter-spacing: 0.28px;
     margin-right: 30px;
-    display: flex;
-    align-items: center;
+    @include flex-position($display: flex);
     transform: scale(1);
     transition-property: color, background-color, transform;
     transition-duration: 250ms;
@@ -219,8 +214,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 0;
-    display: flex;
-    align-items: center;
+    @include flex-position($display: flex);
     margin-right: 10px;
     fill: currentColor;
     width: 142px;
