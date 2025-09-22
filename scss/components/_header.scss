@@ -34,7 +34,7 @@
   }
 
   &__list {
-    @include flex-position($display: flex, $Space: 50px);
+    @include flex-position($display: flex, $space: 50px);
     margin-left: 95px;
     margin-right: 313px;
     margin-bottom: px;
@@ -83,7 +83,7 @@
   }
 
   &__link2 {
-    color: $text1-color;
+    color: $text-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -125,7 +125,7 @@
   }
 
   &__link3 {
-    color: $text1-color;
+    color: $text-color;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;

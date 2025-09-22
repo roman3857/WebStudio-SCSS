@@ -1,6 +1,8 @@
 @import "./base/reset";
-@import './utills/keyframes';
+@import "./utills/keyframes";
 @import "./utills/vars";
+@import "./utills/mixin";
+@import "./utills/placeholders";
 @import "./base/common";
 @import "./components/modal";
 @import "./components/header";
@@ -10,5 +12,3 @@
 @import "./components/team";
 @import "./components/customers";
 @import "./components/footer";
-@import "./utills/placeholders.scss";
-@import "./utills/mixin.scss";
