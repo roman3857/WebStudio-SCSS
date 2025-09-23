@@ -1,7 +1,15 @@
 .header {
-  padding-top: 32px;
+  padding-top: 10px;
   border-bottom: solid 1px $bg-color2;
-  padding-bottom: 32px;
+  padding-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 21px;
+    padding-top: 21px;
+  }
 
   &__container {
     display: flex;
@@ -9,7 +17,6 @@
   &__title {
     @extend %title;
     letter-spacing: 0.78px;
-    
   }
   span {
     color: $text2-color;
