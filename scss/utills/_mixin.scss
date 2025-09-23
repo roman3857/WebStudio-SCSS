@@ -1,4 +1,4 @@
-@mixin flex-position($horyzontal: center, $vertical: center, $wrap: wrap, $space: 0, $direction: row, $display: flex){
+@mixin flex-position($horyzontal: center, $vertical: center, $wrap: wrap, $space: 0, $direction: row, $display: block){
   display: $display;
   justify-content: $horyzontal;
   align-items: $vertical;
