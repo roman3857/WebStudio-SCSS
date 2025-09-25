@@ -3,12 +3,16 @@
   background: $bg-color3;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  width: 528px;
-  height: 581px;
   flex-shrink: 0;
   position: relative;
   margin-left: 41px;
   margin-right: 39px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 
   &__header {
     background: rgba(0, 0, 0, 0.2);
@@ -26,7 +30,9 @@
   &__title {
     @extend %title;
     text-align: center;
-    letter-spacing: 0.6px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.03em;
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
@@ -36,7 +42,7 @@
     margin-left: 41px;
     margin-right: 39px;
   }
-  &__input-group {
+  &__input__group {
     @include flex-position($display: flex);
     border: 1px solid $bg-color4;
     border-radius: 6px;
@@ -54,6 +60,7 @@
     margin-right: 10px;
     fill: $text3-color;
     flex-shrink: 0;
+    display: block;
 
     &:hover {
       fill: $subtitle-color;
@@ -62,7 +69,7 @@
     }
   }
 
-  &__form-container {
+  &__form__container {
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
