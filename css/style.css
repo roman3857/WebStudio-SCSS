@@ -440,14 +440,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
   gap: 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.03px;
 }
 
 @media screen and (min-width: 768px) {
@@ -574,6 +574,12 @@ body {
           transition-delay: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .header__link {
+    letter-spacing: 0.02em;
+  }
+}
+
 .header__link:hover {
   color: #2196f3;
   font-size: 14px;
@@ -628,6 +634,12 @@ body {
   display: inline-block;
 }
 
+@media screen and (min-width: 768px) {
+  .header__link2 {
+    letter-spacing: 0.02em;
+  }
+}
+
 .header__link2:hover {
   color: #2196f3;
   font-size: 14px;
@@ -680,6 +692,12 @@ body {
   -webkit-transition-delay: 0;
           transition-delay: 0;
   display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .header__link3 {
+    letter-spacing: 0.02em;
+  }
 }
 
 .header__link3:hover {
@@ -788,11 +806,11 @@ body {
   .header__mail {
     color: #757575;
     font-family: "Roboto";
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.02px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -843,15 +861,19 @@ body {
   height: 12px;
 }
 
+.header__tel {
+  margin-right: auto;
+}
+
 @media screen and (min-width: 768px) {
   .header__tel {
     color: #757575;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.02px;
     -webkit-transform: scale(1);
             transform: scale(1);
     -webkit-transition-property: color, background-color, -webkit-transform;
