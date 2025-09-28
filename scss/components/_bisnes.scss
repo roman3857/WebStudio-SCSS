@@ -22,14 +22,15 @@
     ),
     url("../image/photo22.webp");
   @media screen and (min-width: 768px) {
-    background-size: cover;
     background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
   }
   @media screen and (min-width: 1200px) {
-    background-size: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-repeat: repeat;
+    width: auto;
+    height: auto;
   }
 
   &__title {

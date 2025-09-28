@@ -962,17 +962,18 @@ body {
 
 @media screen and (min-width: 768px) {
   .bisnes {
-    background-size: cover;
     background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .bisnes {
-    background-size: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-repeat: repeat;
+    width: auto;
+    height: auto;
   }
 }
 
