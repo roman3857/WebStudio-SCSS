@@ -1128,19 +1128,47 @@ body {
 }
 
 .info__item1::before {
+  width: 354px;
   background-image: url(../photo/antenna1.1.webp);
 }
 
+@media screen and (min-width: 1200px) {
+  .info__item1::before {
+    width: 270px;
+  }
+}
+
 .info__item2::before {
+  width: 354px;
   background-image: url(../photo/clock1.webp);
 }
 
+@media screen and (min-width: 1200px) {
+  .info__item2::before {
+    width: 270px;
+  }
+}
+
 .info__item3::before {
+  width: 354px;
   background-image: url(../photo/diagram1.webp);
 }
 
+@media screen and (min-width: 1200px) {
+  .info__item3::before {
+    width: 270px;
+  }
+}
+
 .info__item4::before {
+  width: 354px;
   background-image: url(../photo/astronaut1.webp);
+}
+
+@media screen and (min-width: 1200px) {
+  .info__item4::before {
+    width: 270px;
+  }
 }
 
 .info__subtitle {

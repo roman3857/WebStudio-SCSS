@@ -4,11 +4,10 @@
     margin-top: 94px;
     @include flex-position($display: block);
     @media screen and (min-width: 768px) {
-      @include flex-position($display: flex, $wrap: wrap);
+      @include flex-position($wrap: wrap, $display: flex);
     }
     @media screen and (min-width: 1200px) {
       @include flex-position($display: flex, $wrap: nowrap);
-
     }
   }
 
@@ -20,22 +19,46 @@
 
   &__item1::before {
     @extend %icon;
+    width: 354px;
     background-image: url(../photo/antenna1.1.webp);
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__item2::before {
     @extend %icon;
+    width: 354px;
     background-image: url(../photo/clock1.webp);
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__item3::before {
     @extend %icon;
+    width: 354px;
     background-image: url(../photo/diagram1.webp);
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__item4::before {
     @extend %icon;
+    width: 354px;
     background-image: url(../photo/astronaut1.webp);
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__subtitle {
