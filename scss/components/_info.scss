@@ -2,8 +2,14 @@
   &__list {
     display: flex;
     margin-top: 94px;
-    width: 1170px;
-    height: 248px;
+    @include flex-position($display: block);
+    @media screen and (min-width: 768px) {
+      @include flex-position($display: flex, $wrap: wrap);
+    }
+    @media screen and (min-width: 1200px) {
+      @include flex-position($display: flex, $wrap: nowrap);
+
+    }
   }
 
   &__item {
@@ -15,7 +21,6 @@
   &__item1::before {
     @extend %icon;
     background-image: url(../photo/antenna1.1.webp);
-
   }
 
   &__item2::before {
@@ -52,5 +57,12 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }

@@ -7,6 +7,8 @@
   position: relative;
   margin-left: 41px;
   margin-right: 39px;
+  width: 450px;
+  height: 609px;
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
@@ -58,14 +60,12 @@
     width: 18px;
     height: 18px;
     margin-right: 10px;
-    fill: $text3-color;
+    fill: $text-color;
     flex-shrink: 0;
     display: block;
 
     &:hover {
       fill: $subtitle-color;
-      width: 18px;
-      height: 18px;
     }
   }
 
@@ -189,11 +189,11 @@
     margin-left: 5px;
   }
 
-  &__icon-item {
+  &__icon__item {
     @include flex-position($display: flex);
   }
 
-  &__icon-item:hover &__icon-item:focus {
+  &__icon__item:hover &__icon-item:focus {
     fill: $subtitle-color;
   }
 }

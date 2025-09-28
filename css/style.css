@@ -146,6 +146,8 @@ body {
   position: relative;
   margin-left: 41px;
   margin-right: 39px;
+  width: 450px;
+  height: 609px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -220,7 +222,7 @@ body {
   width: 18px;
   height: 18px;
   margin-right: 10px;
-  fill: #afb1b8;
+  fill: #212121;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: block;
@@ -228,8 +230,6 @@ body {
 
 .modal__icon:hover {
   fill: #2196f3;
-  width: 18px;
-  height: 18px;
 }
 
 .modal__form__container {
@@ -389,7 +389,7 @@ body {
   margin-left: 5px;
 }
 
-.close__icon-item {
+.close__icon__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,7 +408,7 @@ body {
           flex-direction: row;
 }
 
-.close__icon-item:hover .close__icon-item:focus {
+.close__icon__item:hover .close__icon-item:focus {
   fill: #2196f3;
 }
 
@@ -1063,8 +1063,62 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 94px;
-  width: 1170px;
-  height: 248px;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (min-width: 768px) {
+  .info__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .info__item {
@@ -1108,6 +1162,19 @@ body {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .info__text {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info__text {
+    width: 270px;
+  }
 }
 
 .hero {

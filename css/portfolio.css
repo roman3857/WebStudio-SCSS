@@ -724,7 +724,7 @@ body {
   background: #f5f4fa;
 }
 
-.photo__item:hover .photo__overlay-box {
+.photo__item:hover .photo__overlay__box {
   -webkit-transform: translatey(0);
           transform: translatey(0);
 }
@@ -734,7 +734,7 @@ body {
   overflow: hidden;
 }
 
-.photo__overlay-text {
+.photo__overlay__text {
   color: #fff;
   font-family: Roboto;
   font-size: 18px;
@@ -746,7 +746,7 @@ body {
   margin-left: 24px;
 }
 
-.photo__overlay-box {
+.photo__overlay__box {
   position: absolute;
   top: 0;
   left: 0;
