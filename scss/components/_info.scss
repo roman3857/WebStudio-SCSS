@@ -4,7 +4,7 @@
     margin-top: 94px;
     @include flex-position($display: block);
     @media screen and (min-width: 768px) {
-      @include flex-position($wrap: wrap, $display: flex);
+      @include flex-position($display: flex, $wrap: wrap, $space: 30px);
     }
     @media screen and (min-width: 1200px) {
       @include flex-position($display: flex, $wrap: nowrap);
@@ -15,6 +15,8 @@
     margin-right: 30px;
     display: block;
     gap: 30px;
+    width: 354px;
+    height: 224px;
   }
 
   &__item1::before {

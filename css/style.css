@@ -1092,7 +1092,7 @@ body {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 0;
+    gap: 30px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1125,6 +1125,8 @@ body {
   margin-right: 30px;
   display: block;
   gap: 30px;
+  width: 354px;
+  height: 224px;
 }
 
 .info__item1::before {
