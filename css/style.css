@@ -226,6 +226,7 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: block;
+  outline: solid red;
 }
 
 .modal__icon:hover {
@@ -1086,14 +1087,6 @@ body {
 @media screen and (min-width: 1200px) {
   .info__item {
     width: 270px;
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-position: center;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-color: #f5f4fa;
   }
 }
 
@@ -1141,6 +1134,13 @@ body {
 .hero {
   padding-top: 94px;
   padding-bottom: 94px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    display: block;
+  }
 }
 
 .hero__title {
@@ -1242,19 +1242,48 @@ body {
 }
 
 .team__member {
-  width: 270px;
-  height: 428px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  width: 100%;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 480px) {
+  .team__member {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__member {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__member {
+    width: 270px;
+  }
+}
+
 .team__title {
   margin-bottom: 50px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .team__title {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+  }
 }
 
 .team__card {
@@ -1422,8 +1451,7 @@ body {
 .customers__item {
   border-radius: 4px;
   border: 1px solid #afb1b8;
-  width: 170px;
-  height: 92px;
+  width: 210px;
   padding-left: 32px;
   padding-bottom: 16px;
   padding-right: 32px;
@@ -1440,13 +1468,24 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-delay: 0;
           transition-delay: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    width: 170px;
+  }
 }
 
 .customers__icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  display: inline-block;
 }
 
 .customers__list {
@@ -1468,15 +1507,14 @@ body {
           flex-direction: row;
 }
 
+@media screen and (min-width: 1200px) {
+  .customers__list {
+    gap: 30px;
+  }
+}
+
 .customers__item:hover {
-  border-radius: 4px;
   border: 1px solid #2196f3;
-  width: 170px;
-  height: 92px;
-  padding-left: 32px;
-  padding-bottom: 16px;
-  padding-right: 32px;
-  padding-top: 16px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }

@@ -3,53 +3,51 @@
   padding-bottom: 94px;
   background-color: $bg-color3;
 
-
-&__title {
- @extend %title;
+  &__title {
+    @extend %title;
     @include flex-position($display: flex);
-  margin-bottom: 50px;
-}
+    margin-bottom: 50px;
+  }
 
-&__item {
-  border-radius: 4px;
-  border: 1px solid $text3-color;
-  width: 170px;
-  height: 92px;
-  padding-left: 32px;
-  padding-bottom: 16px;
-  padding-right: 32px;
-  padding-top: 16px;
-  transform: rotate(0);
-  transition-property: color, background-color, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}
+  &__item {
+    border-radius: 4px;
+    border: 1px solid $text3-color;
+    width: 210px;
+    padding-left: 32px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    padding-top: 16px;
+    transform: rotate(0);
+    transition-property: color, background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+  }
 
-&__icon {
-  width: 106px;
-  height: 60px;
-  fill: $text3-color;
-  display: inline-block;
-}
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: $text3-color;
+  }
 
-&__list {
+  &__list {
     @include flex-position($display: flex, $space: 50px);
-}
+    @media screen and (min-width: 1200px) {
+      gap: 30px;
+    }
+  }
 
-&__item:hover {
-  border-radius: 4px;
-  border: 1px solid $subtitle-color;
-  width: 170px;
-  height: 92px;
-  padding-left: 32px;
-  padding-bottom: 16px;
-  padding-right: 32px;
-  padding-top: 16px;
-  transform: rotate(180deg);
-}
+  &__item:hover {
+    border: 1px solid $subtitle-color;
+    transform: rotate(180deg);
+  }
 
-&__icon:hover {
-  fill: $subtitle-color;
-}
+  &__icon:hover {
+    fill: $subtitle-color;
+  }
 }

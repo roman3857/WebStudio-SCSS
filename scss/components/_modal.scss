@@ -63,6 +63,7 @@
     fill: $text-color;
     flex-shrink: 0;
     display: block;
+    outline: solid red;
 
     &:hover {
       fill: $subtitle-color;
