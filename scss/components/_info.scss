@@ -2,65 +2,53 @@
   &__list {
     display: flex;
     margin-top: 94px;
-    @include flex-position($display: block);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     @media screen and (min-width: 768px) {
-      @include flex-position($display: flex, $wrap: wrap, $space: 30px);
     }
     @media screen and (min-width: 1200px) {
-      @include flex-position($display: flex, $wrap: nowrap);
     }
   }
 
   &__item {
-    margin-right: 30px;
     display: block;
-    gap: 30px;
-    width: 354px;
-    height: 224px;
+    width: 450px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      content: "";
+      display: block;
+      width: 270px;
+      height: 120px;
+      background-position: center;
+      background-size: 70px 70px;
+      background-repeat: no-repeat;
+      background-color: #f5f4fa;
+    }
   }
 
   &__item1::before {
     @extend %icon;
-    width: 354px;
     background-image: url(../photo/antenna1.1.webp);
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    }
   }
 
   &__item2::before {
     @extend %icon;
-    width: 354px;
     background-image: url(../photo/clock1.webp);
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    }
   }
 
   &__item3::before {
     @extend %icon;
-    width: 354px;
     background-image: url(../photo/diagram1.webp);
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    }
   }
 
   &__item4::before {
     @extend %icon;
-    width: 354px;
     background-image: url(../photo/astronaut1.webp);
-    @media screen and (min-width: 768px) {
-    }
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    }
   }
 
   &__subtitle {
@@ -82,12 +70,9 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
-    width: 100%;
-    @media screen and (min-width: 768px) {
-      width: 354px;
-    }
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-    }
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
   }
 }
