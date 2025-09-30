@@ -839,12 +839,21 @@ body {
 }
 
 .footer__title {
+  color: #ffffff;
   letter-spacing: 0.78px;
   padding-top: 60px;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    font-size: 26px;
+  }
 }
 
 .footer__span {
-  color: #ffffff;
+  color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-style: normal;
@@ -916,6 +925,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 70px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__icon {
@@ -1025,16 +1036,16 @@ body {
 }
 
 .footer__group {
-  width: 358px;
   height: 50px;
+  width: 450px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1053,6 +1064,12 @@ body {
   background: rgba(33, 150, 243, 0);
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__group {
+    width: 358px;
+  }
 }
 
 .footer__button {
@@ -1088,8 +1105,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-left: 12px;
-  margin-top: 113px;
+  margin-top: 20px;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition-property: color, background-color, -webkit-transform;
@@ -1102,6 +1118,13 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-delay: 0;
           transition-delay: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    margin-left: 12px;
+    margin-top: 113px;
+  }
 }
 
 .footer__button:hover {
@@ -1129,5 +1152,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=portfolio.css.map */
