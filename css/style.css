@@ -1636,6 +1636,9 @@ body {
   gap: 70px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__icon {
@@ -1667,6 +1670,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+
+.footer__item1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__email2 {
@@ -1746,7 +1760,7 @@ body {
 
 .footer__group {
   height: 50px;
-  width: 450px;
+  width: 100%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: -webkit-box;
