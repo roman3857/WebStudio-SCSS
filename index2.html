@@ -22,7 +22,9 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <h2 class="header__title">Web<span>Studio</span></h2>
+        <h2 class="header__title">
+          <span class="header__span">Web</span>Studio
+        </h2>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -42,7 +44,7 @@
               class="header__mail header__contact"
               href="mailto:info@devstudio.com"
             >
-              <svg class="header__mail-icon">
+              <svg class="header__mail__icon">
                 <use href="./image/symbol-defs.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
@@ -50,41 +52,44 @@
           </li>
           <li class="header__item2">
             <a class="header__tel" href="tel:+380961111111">
-              <svg class="header__tel-icon">
+              <svg class="header__tel__icon">
                 <use href="./image/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <svg class="header__icon__nav">
+          <use href="./image/symbol-defs.svg#icon-menu"></use>
+        </svg>
       </div>
     </header>
     <main class="main__content">
       <!-- photo -->
       <section class="photo">
         <div class="container">
-          <ul class="photo__button-list">
-            <li class="photo__item">
+          <ul class="photo__button__list">
+            <li class="photo__item1">
               <button type="button" class="photo__button photo__button1">
                 усі
               </button>
             </li>
-            <li class="photo__item">
+            <li class="photo__item1">
               <button type="button" class="photo__button photo__button2">
                 Веб-сайти
               </button>
             </li>
-            <li class="photo__item">
+            <li class="photo__item1">
               <button type="button" class="photo__button photo__button3">
                 Додатки
               </button>
             </li>
-            <li class="photo__item">
+            <li class="photo__item1">
               <button type="button" class="photo__button photo__button4">
                 Дизайн
               </button>
             </li>
-            <li class="photo__item">
+            <li class="photo__item1">
               <button type="button" class="photo__button photo__button5">
                 Маркетинг
               </button>
@@ -222,8 +227,8 @@
         </div>
       </section>
     </main>
-    <!- footer ->
-    <footer class="footer">
+    <!-- footer -->
+     <footer class="footer">
       <div class="container footer__container">
         <ul class="footer__lists">
           <li class="footer__items">
@@ -232,6 +237,7 @@
                 <h2 class="footer__title">
                   <span class="footer__span">Web</span>Studio
                 </h2>
+                -
                 <ul class="footer__list">
                   <li class="footer__item">
                     <address class="footer__address">
@@ -251,49 +257,47 @@
           <li class="footer__items">
             <ul class="footer__list2">
               <li class="footer__item2">
-                <h2 class="footer__text">приєднуйтесь</h2>
+                <h2 class="footer__text footer__subtitle">приєднуйтесь</h2>
                 <ul class="footer__list3">
                   <li class="footer__item3">
                     <svg class="footer__icon">
-                      <use href="./image/symboldefts.svg#icon-instagram"></use>
+                      <use href="./image/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </li>
                   <li class="footer__item3">
                     <svg class="footer__icon">
-                      <use href="./image/symboldefts.svg#icon-twitter"></use>
+                      <use href="./image/symbol-defs.svg#icon-twitter"></use>
                     </svg>
                   </li>
                   <li class="footer__item3">
                     <svg class="footer__icon">
-                      <use href="./image/symboldefts.svg#icon-facebook"></use>
+                      <use href="./image/symbol-defs.svg#icon-facebook"></use>
                     </svg>
                   </li>
                   <li class="footer__item3">
                     <svg class="footer__icon">
-                      <use href="./image/symboldefts.svg#icon-linkedin"></use>
+                      <use href="./image/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
-          <li>
-            <div class="foote__-email">
+          <li class="footer__items">
+            <div class="foote__email">
               <div class="footer__column">
                 <div>
-                  <h2 class="footer__text">Підпишіться на розсилку</h2>
+                  <h2 class="footer__text footer__subtitle2">Підпишіться на розсилку</h2>
                   <label class="footer__email2" for="email"></label>
                   <div class="footer__group">
                     <span class="footer__email2">E-mail</span>
-                    <input type="text" id="email" required />
+                    <input type="text" id="email2" required />
                   </div>
                 </div>
                 <div>
                   <button type="button" class="footer__button">
                     Підписатися<svg class="footer__icon2">
-                      <use
-                        href="./image/symbol-defs (7).svg#icon-icon-send"
-                      ></use>
+                      <use href="./image/symbol-defs.svg#icon-icon-send"></use>
                     </svg>
                   </button>
                 </div>
