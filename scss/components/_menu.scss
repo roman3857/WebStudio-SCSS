@@ -1,21 +1,42 @@
 .menu {
-  &__box {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.98);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
 
-  &__box {
-    background-color: $bg-color3;
-    width: 480px;
-    height: 796px;
+.menu.is-open {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.close__menu__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    fill: #2196f3;
   }
-  &__button:hover {
+}
+
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none !important;
   }
 }
