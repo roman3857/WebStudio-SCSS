@@ -13,12 +13,83 @@
   transition: opacity 0.3s ease, visibility 0.3s ease;
   opacity: 0;
   visibility: hidden;
-}
 
-.menu.is-open {
-  display: flex;
-  opacity: 1;
-  visibility: visible;
+  &__link {
+    position: absolute;
+    top: 48px;
+    left: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: $text-color;
+  }
+  &__link2 {
+    position: absolute;
+    top: 132px;
+    left: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: $text-color;
+  }
+  &__link3 {
+    position: absolute;
+    top: 212px;
+    left: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: $text-color;
+  }
+  &__link:hover &__link2:hover &__link3:hover {
+    color: $subtitle-color;
+  }
+
+  &__tel {
+    position: absolute;
+    top: 562px;
+    left: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    color: $subtitle-color;
+  }
+  &__mail {
+    position: absolute;
+    top: 634px;
+    left: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: $subtext-color;
+  }
+
+  &__list3 {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 726px;
+    left: 40px;
+  }
+
+  &__item3 {
+    padding-right: 10px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    letter-spacing: 0.02em;
+    color: $subtitle-color;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
 }
 
 .close__menu__btn {
@@ -34,9 +105,14 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
   .menu {
     display: none !important;
   }
+}
+
+.menu.is-open {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
 }

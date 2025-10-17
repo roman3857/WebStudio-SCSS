@@ -59,9 +59,62 @@
             </a>
           </li>
         </ul>
-        <svg class="header__icon__nav">
-          <use href="./image/symbol-defs.svg#icon-menu"></use>
-        </svg>
+        <button class="header__icon__nav js-open-menu" type="button">
+          <svg class="header__icon__nav">
+            <use href="./image/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu js-menu-container" id="mobile-menu">
+          <div class="menu__box">
+            <button class="js-close-menu close__menu__btn" type="button">
+              <svg width="24" height="24">
+                <use href="./image/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="menu__na">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="./index.html" class="menu__link">Студія</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./index2.html" class="menu__link2">Портфоліо</a>
+                </li>
+                <li class="menu__item">
+                  <a href="@" class="menu__link3">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="menu__list2">
+              <li class="menu__item2">
+                <a class="menu__tel" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="menu__item2">
+                <a
+                  class="menu__mail menu__contact"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="menu__list3">
+              <li class="menu__item3">
+                <a class="Instagram" href="Instagram">Instagram</a>
+              </li>
+              <li class="menu__item3">
+                <a class="Twitter" href="Twitter">Twitter</a>
+              </li>
+              <li class="menu__item3">
+                <a class="Facebook" href="Facebook">Facebook</a>
+              </li>
+              <li class="menu__item3">
+                <a class="LinkedIn" href="LinkedIn">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="main__content">
@@ -228,7 +281,7 @@
       </section>
     </main>
     <!-- footer -->
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <ul class="footer__lists">
           <li class="footer__items">
@@ -287,7 +340,9 @@
             <div class="foote__email">
               <div class="footer__column">
                 <div>
-                  <h2 class="footer__text footer__subtitle2">Підпишіться на розсилку</h2>
+                  <h2 class="footer__text footer__subtitle2">
+                    Підпишіться на розсилку
+                  </h2>
                   <label class="footer__email2" for="email"></label>
                   <div class="footer__group">
                     <span class="footer__email2">E-mail</span>
@@ -307,5 +362,12 @@
         </ul>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="menu.js"></script>
   </body>
 </html>
