@@ -1,87 +1,100 @@
-.hero {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  display: none;
+.hero .container {
+  @include flex-position($display: flex);
+  @media screen and (min-width: 768px) {
+  }
   @media screen and (min-width: 1200px) {
-    display: block;
   }
+}
+
+.hero {
+  background: $bg-color;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  flex-shrink: 0;
+  display: flex;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../image/photo22.webp");
+  @media screen and (min-width: 768px) {
+    background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: auto;
+    height: auto;
+  }
+
   &__title {
-    @extend %title;
-    margin-bottom: 50px;
+    color: $bg-color3;
     text-align: center;
+    font-family: Roboto;
+    font-size: 26px;
+    line-height: 162%;
+    letter-spacing: 0.06em;
+    margin-left: 60px;
+    margin-right: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 204px;
+      margin-right: 204px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 60px;
+      letter-spacing: 2.64px;
+      text-transform: uppercase;
+      margin-left: 237px;
+      margin-right: 237px;
+    }
   }
 
-  &__photo {
-    width: 370px;
-    height: 294px;
+  &__button {
     flex-shrink: 0;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    border-radius: 4px;
+    background: $subtitle-color;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: $bg-color3;
+    text-align: center;
+    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    transform: rotate(0);
+    transition-property: color, background-color, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+    display: inline-block;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 30px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.96px;
+      font-size: 16px;
+      width: 216px;
+      height: 50px;
+    }
   }
 
-  &__gallery {
-    display: flex;
-    gap: 30px;
-  }
-
-  &__item {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0;
-    position: relative;
-  }
-
-  &__bgitem {
-    background: rgba(47, 48, 58, 0.8);
-    width: 370px;
-    height: 70px;
-    flex-shrink: 0;
-  }
-
-  &__item > &__bg3 {
-    position: absolute;
-    top: 224px;
-    right: 0;
-    margin: 0;
-    padding: 18px 95px;
-    border-bottom-left-radius: 4px;
-  }
-
-  &__item > &__bg2 {
-    position: absolute;
-    top: 224px;
-    right: 0;
-    margin: 0;
-    padding: 27px 0;
-    width: 100%;
-    border-bottom-left-radius: 4px;
-  }
-
-  &__item > &__bg {
-    position: absolute;
-    top: 224px;
-    right: 0;
-    margin: 0;
-    padding: 27px 0;
-    width: 100%;
-    border-bottom-left-radius: 4px;
-  }
-
-  &__bg {
-    @extend %bg;
-  }
-
-  &__bg2 {
-    @extend %bg;
-  }
-
-  &__bg3 {
-    @extend %bg;
-  }
-
-  &__photobg {
-    width: 370px;
-    height: 70px;
-    flex-shrink: 0;
-    background: rgba(47, 48, 58, 0.8);
+  &__button:hover {
+    transform: rotate(50deg);
   }
 }
