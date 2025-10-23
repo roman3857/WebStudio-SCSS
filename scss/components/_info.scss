@@ -21,22 +21,106 @@
 
   &__item1::before {
     @extend %icon;
-    background-image: url(../photo/antenna1.1.webp);
+    background-image: url("../../image/mobile/info-antena@mobile-1x.webp");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../image/mobile/info-antena@mobile-2x.webp");
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url("../../image/tablet/info-antena@tablet-1x.webp");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../image/tablet/info-antena@tablet-2x.webp");
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url("../../image/desktop/info-antena@desktop-1x.webp");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../image/desktop/info-antena@desktop-2x.webp");
+      }
+    }
   }
 
   &__item2::before {
     @extend %icon;
-    background-image: url(../photo/clock1.webp);
+    background-image: url("../../image/mobile/info-clock@mobile-1x.webp");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../image/mobile/info-clock@mobile-2x.webp");
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url("../../image/tablet/info-clock@tablet-1x.webp");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../image/tablet/info-clock@tablet-2x.webp");
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url("../../image/desktop/info-clock@desktop-1x.webp");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../image/desktop/info-clock@desktop-2x.webp");
+      }
+    }
   }
 
   &__item3::before {
     @extend %icon;
-    background-image: url(../photo/diagram1.webp);
+    background-image: url("../../image/mobile/info-computer@mobile-1x.webp");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../image/mobile/info-computer@mobile-2x.webp");
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url("../../image/tablet/info-computer@tablet-1x.webp");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../image/tablet/info-computer@tablet-2x.webp");
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url("../../image/desktop/info-computer@desktop-1x.webp");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../image/desktop/info-computer@desktop-2x.webp");
+      }
+    }
   }
 
   &__item4::before {
     @extend %icon;
-    background-image: url(../photo/astronaut1.webp);
+    background-image: url("../../image/mobile/info-astronaut@mobile-1x.webp");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../../image/mobile/info-astronaut@mobile-2x.webp");
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url("../../image/tablet/info-astronaut@tablet-1x.webp");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../image/tablet/info-astronaut@tablet-2x.webp");
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url("../../image/desktop/info-astronaut@desktop-1x.webp");
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../../image/desktop/info-astronaut@desktop-2x.webp");
+      }
+    }
   }
 
   &__subtitle {
