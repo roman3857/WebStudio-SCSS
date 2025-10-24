@@ -1041,138 +1041,138 @@ body {
 }
 
 .info__item1::before {
-  background-image: url("../../image/mobile/info-antena@mobile-1x.webp");
+  background-image: url("../image/mobile/info-antena@mobile-1x.webp");
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .info__item1::before {
-    background-image: url("../../image/mobile/info-antena@mobile-2x.webp");
+    background-image: url("../image/mobile/info-antena@mobile-2x.webp");
   }
 }
 
 @media screen and (min-width: 768px) {
   .info__item1::before {
-    background-image: url("../../image/tablet/info-antena@tablet-1x.webp");
+    background-image: url("../image/tablet/info-antena@tablet-1x.webp");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .info__item1::before {
-    background-image: url("../../image/tablet/info-antena@tablet-2x.webp");
+    background-image: url("../image/tablet/info-antena@tablet-2x.webp");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .info__item1::before {
-    background-image: url("../../image/desktop/info-antena@desktop-1x.webp");
+    background-image: url("../image/desktop/info-antena@desktop-1x.webp");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .info__item1::before {
-    background-image: url("../../image/desktop/info-antena@desktop-2x.webp");
+    background-image: url("../image/desktop/info-antena@desktop-2x.webp");
   }
 }
 
 .info__item2::before {
-  background-image: url("../../image/mobile/info-clock@mobile-1x.webp");
+  background-image: url("../image/mobile/info-clock@mobile-1x.webp");
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .info__item2::before {
-    background-image: url("../../image/mobile/info-clock@mobile-2x.webp");
+    background-image: url("../image/mobile/info-clock@mobile-2x.webp");
   }
 }
 
 @media screen and (min-width: 768px) {
   .info__item2::before {
-    background-image: url("../../image/tablet/info-clock@tablet-1x.webp");
+    background-image: url("../image/tablet/info-clock@tablet-1x.webp");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .info__item2::before {
-    background-image: url("../../image/tablet/info-clock@tablet-2x.webp");
+    background-image: url("../image/tablet/info-clock@tablet-2x.webp");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .info__item2::before {
-    background-image: url("../../image/desktop/info-clock@desktop-1x.webp");
+    background-image: url("../image/desktop/info-clock@desktop-1x.webp");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .info__item2::before {
-    background-image: url("../../image/desktop/info-clock@desktop-2x.webp");
+    background-image: url("../image/desktop/info-clock@desktop-2x.webp");
   }
 }
 
 .info__item3::before {
-  background-image: url("../../image/mobile/info-computer@mobile-1x.webp");
+  background-image: url("../image/mobile/info-computer@mobile-1x.webp");
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .info__item3::before {
-    background-image: url("../../image/mobile/info-computer@mobile-2x.webp");
+    background-image: url("../image/mobile/info-computer@mobile-2x.webp");
   }
 }
 
 @media screen and (min-width: 768px) {
   .info__item3::before {
-    background-image: url("../../image/tablet/info-computer@tablet-1x.webp");
+    background-image: url("../image/tablet/info-computer@tablet-1x.webp");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .info__item3::before {
-    background-image: url("../../image/tablet/info-computer@tablet-2x.webp");
+    background-image: url("../image/tablet/info-computer@tablet-2x.webp");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .info__item3::before {
-    background-image: url("../../image/desktop/info-computer@desktop-1x.webp");
+    background-image: url("../image/desktop/info-computer@desktop-1x.webp");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .info__item3::before {
-    background-image: url("../../image/desktop/info-computer@desktop-2x.webp");
+    background-image: url("../image/desktop/info-computer@desktop-2x.webp");
   }
 }
 
 .info__item4::before {
-  background-image: url("../../image/mobile/info-astronaut@mobile-1x.webp");
+  background-image: url("../image/mobile/info-astronaut@mobile-1x.webp");
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .info__item4::before {
-    background-image: url("../../image/mobile/info-astronaut@mobile-2x.webp");
+    background-image: url("../image/mobile/info-astronaut@mobile-2x.webp");
   }
 }
 
 @media screen and (min-width: 768px) {
   .info__item4::before {
-    background-image: url("../../image/tablet/info-astronaut@tablet-1x.webp");
+    background-image: url("../image/tablet/info-astronaut@tablet-1x.webp");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .info__item4::before {
-    background-image: url("../../image/tablet/info-astronaut@tablet-2x.webp");
+    background-image: url("../image/tablet/info-astronaut@tablet-2x.webp");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .info__item4::before {
-    background-image: url("../../image/desktop/info-astronaut@desktop-1x.webp");
+    background-image: url("../image/desktop/info-astronaut@desktop-1x.webp");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .info__item4::before {
-    background-image: url("../../image/desktop/info-astronaut@desktop-2x.webp");
+    background-image: url("../image/desktop/info-astronaut@desktop-2x.webp");
   }
 }
 
@@ -1247,13 +1247,13 @@ body {
   margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../image/mobile/hero-bg@mobile-1x.webp");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../image/mobile/hero-bg@mobile-1x.webp");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../image/mobile/hero-bg@mobile-1x.webp");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/mobile/hero-bg@mobile-1x.webp");
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../image/mobile/hero-bg@mobile-2x.webp");
+    background-image: url("../image/mobile/hero-bg@mobile-2x.webp");
   }
 }
 
@@ -1262,13 +1262,13 @@ body {
     background-repeat: no-repeat;
     width: auto;
     height: 400px;
-    background-image: url("../../image/tablet/hero-bg@tablet-1x.webp");
+    background-image: url("../image/tablet/hero-bg@tablet-1x.webp");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../image/tablet/hero-bg@tablet-2x.webp");
+    background-image: url("../image/tablet/hero-bg@tablet-2x.webp");
   }
 }
 
@@ -1278,13 +1278,13 @@ body {
     padding-bottom: 200px;
     width: auto;
     height: auto;
-    background-image: url("../../image/desktop/hero-bg@desktop-1x.webp");
+    background-image: url("../image/desktop/hero-bg@desktop-1x.webp");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../image/desktop/hero-bg@desktop-2x.webp");
+    background-image: url("../image/desktop/hero-bg@desktop-2x.webp");
   }
 }
 
